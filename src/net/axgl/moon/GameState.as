@@ -16,7 +16,6 @@ package net.axgl.moon {
 	import org.axgl.AxState;
 	import org.axgl.AxVector;
 	import org.axgl.input.AxKey;
-	import org.axgl.plus.message.AxMessage;
 	import org.axgl.render.AxColor;
 
 	public class GameState extends AxState {
@@ -45,7 +44,7 @@ package net.axgl.moon {
 		override public function update():void {
 			if (Ax.keys.pressed(AxKey.SPACE)) {
 				world.collision.setGraphic(Resource.COLLISION_TILESET_RED);
-				AxMessage.show(["This is a message", "And this"]);
+				//AxMessage.show(["This is a message", "And this"]);
 			}
 			
 			super.update();
